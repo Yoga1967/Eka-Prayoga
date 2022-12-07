@@ -1,0 +1,86 @@
+:root {
+    --font-base: "Cormorant Upright", serif;
+    --font-alt: "Open Sans", sans-serif;
+    --color-golden: #dcca87;
+    --color-black: #0c0c0c;
+    --color-gray: #545454;
+    --color-crimson: #f5efdb;
+    --color-grey: #aaaaaa;
+    --color-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.p__opensans {
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .04em;
+    line-height: 28px;
+}
+
+.p__cormorant, .p__opensans {
+    color: var(--color-white);
+    text-transform: capitalize;
+}
+
+.app__navbar, .app__navbar-logo {
+    align-items: center;
+    display: flex;
+}
+
+.app__navbar {
+    background: var(--color-black);
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.app__navbar-logo {
+    justify-content: flex-start;
+}
+.app__navbar-links {
+    align-items: center;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    list-style: none;
+}
+.app__navbar-login {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.app__navbar-logo img {
+    width: 150px;
+}
+.app__navbar-links li {
+    cursor: pointer;
+    margin: 0 1rem;
+    font-family: var(--font-alt);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .04em;
+    line-height: 28px;
+}
+.app__navbar-login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.app__navbar-login div {
+    background: var(--color-grey);
+    height: 30px;
+    width: 1px;
+}
